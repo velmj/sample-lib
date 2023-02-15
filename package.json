@@ -1,0 +1,52 @@
+{
+  "name": "sample-lib",
+  "type": "module",
+  "version": "0.0.1",
+  "packageManager": "npm@9.3.1",
+  "description": "",
+  "author": "Vel M<velm16@outlook.com>",
+  "keywords": [],
+  "license": "MIT",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "typesVersions": {
+    "*": {
+      "*": [
+        "./dist/*",
+        "./dist/index.d.ts"
+      ]
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "unbuild",
+    "lint": "eslint .",
+    "release": "bumpp && npm publish",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@tsconfig/node-lts": "^18.12.1",
+    "@types/node": "^18.13.0",
+    "bumpp": "^8.2.1",
+    "eslint": "^8.34.0",
+    "esno": "^0.16.3",
+    "rimraf": "^4.1.2",
+    "typescript": "^4.9.5",
+    "unbuild": "^1.1.1",
+    "vite": "^4.1.1"
+  },
+  "volta": {
+    "node": "18.14.0"
+  }
+}
