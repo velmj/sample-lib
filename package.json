@@ -1,7 +1,7 @@
 {
   "name": "@velmj/sample-lib",
   "type": "module",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "packageManager": "npm@9.3.1",
   "description": "",
   "author": "Vel M<velm16@outlook.com>",
